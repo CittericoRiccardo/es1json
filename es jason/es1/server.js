@@ -15,7 +15,7 @@ app.post('/login', (req, res) => {
   const username = req.body.Username
   const password = req.body.Password
   for (var i = 0; i < utente.length; i++) {
-    if (utente[i].username == username && utente[i].password == password) {
+    if (utente[i].Username == username && utente[i].Password == password) {
       res.send('accesso riuscito')
       return
     }
